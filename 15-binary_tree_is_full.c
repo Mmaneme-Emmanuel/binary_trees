@@ -11,11 +11,11 @@ int recursive_solution(const binary_tree_t *tree)
 		return (0);
 
 	if ((tree->left == NULL && tree->right == NULL) ||
-			(tree->left != NULL && tree->right != NULL))
+		(tree->left != NULL && tree->right != NULL))
 	{
 
 		if (recursive_solution(tree->left) == 0 &&
-				recursive_solution(tree->right) == 0)
+			recursive_solution(tree->right) == 0)
 		return (0);
 
 	else
